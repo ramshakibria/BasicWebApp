@@ -25,7 +25,10 @@ public class QueryProcessor {
         } else if (query.contains("what is") && query.contains("plus")) {
             String[] numbers = query.split("plus");
             return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]) + "";
-        } else { // TODO extend the programm here
+        } else if (query.contains("what is ") && query.contains("multiplied")) {
+            String[] numbers = query.split("multiplied");
+            return Integer.parseInt(numbers[0]) * Integer.parseInt(numbers[1]) + "";
+        } else {
             return "";
 
         }
