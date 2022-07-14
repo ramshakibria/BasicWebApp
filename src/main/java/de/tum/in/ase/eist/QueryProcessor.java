@@ -21,6 +21,7 @@ public class QueryProcessor {
                     }
                     return number;
                 }
+
             }
         } else if (query.contains("what is") && query.contains("plus")) {
             String[] numbers = query.split("plus");
