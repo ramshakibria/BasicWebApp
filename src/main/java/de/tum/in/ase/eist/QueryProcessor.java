@@ -28,10 +28,15 @@ public class QueryProcessor {
         } else if (query.contains("what is ") && query.contains("multiplied")) {
             String[] numbers = query.split("multiplied");
             return Integer.parseInt(numbers[0]) * Integer.parseInt(numbers[1]) + "";
-        } else {
+        } if(query.contains("which city is the eiffel tower in ")) {
+            return "paris";
+        }
+
+
+        else {
             return "";
 
         }
-        return "";
+
     }
 }
